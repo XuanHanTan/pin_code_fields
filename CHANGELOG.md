@@ -1,3 +1,64 @@
+# [7.4.0]
+
+- Added new attributes`readOnly`, `textGradient`, `errorTextDirection`, `errorTextMargin`, `autoUnfocus`
+- Resolved blinkDebounce `setState()` after `dispose()` bug.
+- Example app refactor
+
+# [7.3.0]
+
+- Fixed extra padding if autoValidate is not provided
+- Added ScrollPadding, errorBorderColor
+
+# [7.2.0]
+
+- Much requested feature placeholder has been added `hintCharacter`
+- `hintStyle` has been added to customize the hint TextStyle
+
+# [7.1.0]
+
+- Added `useExternalAutoFillGroup` to use this widget with external `AutofillGroup`
+- Added `fieldOuterPadding` to add extra padding on each cells. Default to 0.0
+
+# [7.0.0]
+
+- Added null-safety to the main branch.
+
+# [7.0.0-nullsafety]
+
+### Features ✨
+
+- Added `AutofillContextAction`, default is `AutofillContextAction.commit`
+
+### Breaking changes ⚠️
+
+- Migrated to null-safety.
+- Minimum Flutter version is set to 1.22.0
+
+### Fixes 🐛
+
+- Fixed default text value not showing, #153
+
+### Fixes 🐛
+
+- Reopen keyboard onTap on the cells #92, thanks to https://github.com/YaroslavGS for the suggestion
+
+# [6.1.0]
+
+### Features ✨
+
+- Added haptic feedback
+  `enum HapticFeedbackTypes { heavy, light, medium, selection, vibrate, }`
+- Added animated obscure widget support `obscuringWidget` and `blinkWhenObscuring`
+
+### Fixes 🐛
+
+- Fixed bug related to TextStyle not given.
+- Fixed bug related to setState is being called after disposal.
+
+[6.0.2] - Added fallback color when the cursor color fails to retrive and fixed deprecated `List` constructors.
+
+[6.0.1] - Fixed read-only warning when field is not `enabled` & cursor animation now only triggers if `showCursor = true`
+
 # [6.0.0]
 
 ### Features ✨
